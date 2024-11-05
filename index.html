@@ -7,7 +7,16 @@
 </head>
 <body>
     <h1>Hola</h1>
-    <a href="login.php">Login</a>
-    <a href="registro.php">registro</a>
+    
+    <!-- Botones para redireccionar a login y registro -->
+    <button onclick="redirectTo('login.php')">Login</button>
+    <button onclick="redirectTo('registro.php')">Registro</button>
+
+    <script>
+        // Función para redireccionar
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 </html>
